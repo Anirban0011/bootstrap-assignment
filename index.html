@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap Assignment</title>
+
+    <!-- -----google fonts----- -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+      <!-- -----font awesome---- -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/1b776a008b.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    /* -----css---- */
+  .jumbotron 
+  {
+    background-image: linear-gradient(
+            rgba(4, 9, 30, 0.7),
+            rgba(4, 9, 30, 0.7)
+          ),url("https://www.dccomics.com/sites/default/files/Char_Gallery_Batman_theBatman2022_6219aca46b90e9.75519854.jpg");
+    background-size: cover;
+  
+  }
+  #col1{
+    background-image: url("https://www.warnerbros.com/static/dc-shop.7cc6a00b.jpg");
+    background-size: cover;
+  
+  }
+  #col2
+  {
+    background-image: url("https://wallpaper.dog/large/5574446.jpg");
+    background-size: cover;
+  }
+  #row1
+  {
+    background-image : linear-gradient(
+            rgba(4, 9, 30, 0.7),
+            rgba(4, 9, 30, 0.7)
+          ),url("https://cdn.vox-cdn.com/thumbor/Awv7Iye63eHU37gDzqrngzBhLR8=/0x0:2683x4126/1200x0/filters:focal(0x0:2683x4126):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22459323/ACTIONCOMICS_Cv1033.jpg");
+    background-size: cover;
+  }
+  #col3
+  {
+    background-image : linear-gradient(
+            rgba(4, 9, 30, 0.7),
+            rgba(4, 9, 30, 0.7)
+          ),url("https://wtop.com/wp-content/uploads/2021/03/steelblue1-e1615503923249.jpg");
+          background-size: cover;
+  }
+
+  #nav-links ul li::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #36f482;
+        display: block;
+        margin: auto;
+      }
+      #nav-links ul li:hover::after {
+        width: 100%;
+        transition: 0.5s;
+      }
+
+  </style>
+
+  <!-- -----header: nav-bar with tabbed pane----- -->
+
+  <body style="font-family: 'IBM Plex Sans', sans-serif">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div>
+        <img
+          src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/logo.png"
+          alt=""
+          width="40px"
+          height="40px"
+          align="left"
+        />
+      </div>
+      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <div class="collapse navbar-collapse text-center" id="nav-links">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#ma">More about DC</a>
+</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+      style="margin-top: 60px"
+      data-interval="4000"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="https://i0.wp.com/batman-news.com/wp-content/uploads/2022/01/The-Batman-2022-Unmask-the-Truth-poster-Featured-01.jpg?fit=1280%2C720&quality=80&strip=info&ssl=1"
+            alt="First slide"
+            width="1280px"
+            height="720px"
+            style="object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://wallpaperaccess.com/full/1278011.jpg"
+            alt="Second slide"
+            width="1280px"
+            height="720px"
+            style="object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://www.teahub.io/photos/full/13-133514_wonder-woman-logo-wallpaper-hd.jpg"
+            alt="Third slide"
+            width="1280px"
+            height="720px"
+            style="object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://images.thedirect.com/media/article_full/jlco.jpg"
+            alt="Fouth slide"
+            width="1280px"
+            height="720px"
+            style="object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://images.hdqwalls.com/download/aquaman-movie-2018-new-poster-0f-1280x720.jpg"
+            alt="Fifth slide"
+            width="1280px"
+            height="720px"
+            style="object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://uhdwallpapers.org/uploads/converted/19/09/21/joker-4k-poster-1280x720_666674-mm-90.jpg"
+            alt="Fifth slide"
+            width="1280px"
+            height="720px"
+            style="object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://images.hdqwalls.com/download/wonder-woman-1984-movie-poster-4k-5h-1280x720.jpg"
+            alt="Fifth slide"
+            width="1280px"
+            height="720px"
+            style="object-fit: cover"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+
+    <!-- ----col ---- -->
+    <!-- -----grid 960 units----- -->
+<div class="container my-5"><center><h1 style="font-size:30px;">News</h1></center></div>
+    <div class="container my-5">
+      <div class="row mb-2 gx-5">
+        <div class="col-md-4">
+          <div
+            class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250"
+          >
+          <div class="col-auto d-none d-lg-block">
+            <img
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              src="https://www.dccomics.com/sites/default/files/imce/2022/02-FEB/john-cena_2_620d7628c87337.29105115.jpg"
+              alt=""
+            />
+          </div>
+            <div class="col p-4 d-flex flex-column position-static">
+              <h5><strong class="d-inline-block mb-2 text-success">Peacemaker Scores a Second Season</strong></h5>
+              <p class="mb-auto">
+                If you’ve been watching the debut season of HBO Max’s Peacemaker, you know we’re speaking true. James Gunn’s brilliantly deranged The Suicide Squad spinoff has managed to juggle an alien conspiracy plot, a kung fu revenge tale, an over-the-top family thriller and an occasionally heart-wrenching look at the complexities of family relationships and obligations—and it’s all worked perfectly.
+              </p>
+              <br><br>
+              <a href="https://www.dccomics.com/blog/2022/02/16/peacemaker-scores-a-second-season" class="stretched-link">Continue reading</a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250"
+          >
+          <div class="col-auto d-none d-lg-block">
+            <img
+              class="bd-placeholder-img"
+              width="400px"
+              height="268px"
+              src="https://www.dccomics.com/sites/default/files/imce/2022/01-JAN/Batgirl_900_61e23194f0ffc9.66299244.jpg"
+              alt="" style="object-fit: cover;"
+            />
+          </div>
+            <div class="col p-4 d-flex flex-column position-static">
+              <h5><strong class="d-inline-block mb-2 text-success">Leslie Grace Gives Us Our First Look at Batgirl</strong></h5>
+              <p class="mb-auto">
+                The Batgirl actress shared our first image of her in the batsuit this evening and it looks like it stepped right off the comic page. Barbara Gordon fans will instantly recognize the blue-and-yellow suit with the full cowl as inspired by Babs’ beloved “Batgirl of Burnside” look, which still stands as one of her most memorable suits of all time. Also note that Grace’s Batgirl, just like Barbara in the comics, has red hair.
+              </p>
+              <br>
+              <a href="https://www.dccomics.com/blog/2022/01/14/leslie-grace-gives-us-our-first-look-at-batgirl" class="stretched-link">Continue reading</a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="row border rounded overflow-hidden flex-md-row shadow-sm h-md-250"
+          >
+          <div class="col-auto d-none d-lg-block">
+            <img
+              class="bd-placeholder-img"
+              width="404px"
+              height="270px"
+              src="https://www.dccomics.com/sites/default/files/styles/blog-latest-blocks-440x330/public/field/image/MV5BNzAzNjA1OTItY2ZkOC00ZDFjLWE0Y2EtYTJkZTVmOWIwMDBiXkEyXkFqcGdeQXVyMzMwOTU5MDk%40._V1__62214ad62d2fc0.77218266.jpg?itok=xhb8wKl2"
+              alt=""  style="object-fit: cover;"
+            />
+          </div>
+            <div class="col p-4 d-flex flex-column position-static">
+              <h5><strong class="d-inline-block mb-2 text-success">Celebrate The Release of “The Batman” With DC</strong></h5>
+              <p class="mb-auto">
+                DC is celebrating the release of “The Batman” (in theaters everywhere on March 4) with exclusive interviews with Robert Pattinson (Bruce Wayne/Batman), Zoë Kravitz (Selina Kyle/Catwoman), Paul Dano (The Riddler) and Colin Ferrell (Oswald Cobblepot/The Penguin), “The Batman” movie product in the DC Shop, free-to-read comics with registration on DC UNIVERSE INFINITE and more on “The Batman” Fan Hub.
+              </p>
+              <br>
+              <a href="https://www.dccomics.com/blog/2022/03/03/celebrate-the-release-of-%E2%80%9Cthe-batman%E2%80%9D-with-dc" class="stretched-link">Continue reading</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- ------hero column full width----- -->
+
+      <div class="container my-5"><center><h1 style="font-size:30px;">Know Your Character</h1></center></div>
+
+      <div class="jumbotron text-light">
+        <div
+            class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250"
+          >
+          <center>
+            <br><h2 class="display-4">Batman</h2>
+            <p class="lead">In the name of his murdered parents, Bruce Wayne wages eternal war on the criminals of Gotham City. He is vengeance. He is the night. He is Batman. <br><br>
+
+              One of the most iconic fictional characters in the world, Batman has dedicated his life to an endless crusade, a war on all criminals in the name of his murdered parents, who were taken from him when he was just a child. Since that tragic night, he has trained his body and mind to near physical perfection to be a self-made Super Hero. He's developed an arsenal of technology that would put most armies to shame. And he's assembled teams of his fellow DC Super Heroes, like the Justice League, the Outsiders and Batman, Incorporated. <br><br>
+              
+              A playboy billionaire by day, Bruce Wayne’s double life affords him the comfort of a life without financial worry, a loyal butler-turned-guardian and the perfect base of operations in the ancient network of caves beneath his family’s sprawling estate. By night, however, he sheds all pretense, dons his iconic scalloped cape and pointed cowl and takes to the shadowy streets, skies and rooftops of Gotham City.</p>
+              <br>
+              <h3 class="display-4">Comics</h3>
+              <br>
+              <div class="row mb-2 gx-5">
+                <div class="col-md-4">
+                  <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/03/BM89_Cv5_00511_DIGITAL_623e28827da9d6.26815545.jpg?itok=0xh2FRxO" class="rounded float-left" alt="...">
+                </div>
+                  <div class="col-md-4">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/03/BM_UL_Cv14_01411_DIGITAL_623e2897219a25.85832634.jpg?itok=zVkjba7Q" class="rounded float-none" alt="...">
+                  </div> 
+                  <div class="col-md-4"><img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/03/BM_CTW_Cv11_01111_DIGITAL_623e288db13a16.21580540.jpg?itok=hDH8w6hA" class="rounded float-right" alt="...">
+                  </div>
+                  </div>
+                <br>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Learn More
+</button>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="text-center"><h4 class="modal-title text-dark" id="exampleModalLongTitle">Extra Information</h4></p>
+        
+      </div>
+      <div class="modal-body text-dark">
+        <p>
+          Batman is a superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. In the DC Universe continuity, Batman is the alias of Bruce Wayne, a wealthy American playboy, philanthropist, and industrialist who resides in Gotham City. Batman's origin story features him swearing vengeance against criminals after witnessing the murder of his parents Thomas and Martha, a vendetta tempered with the ideal of justice. He trains himself physically and intellectually, crafts a bat-inspired persona, and monitors the Gotham streets at night. Kane, Finger, and other creators accompanied Batman with supporting characters, including his sidekicks Robin and Batgirl; allies Alfred Pennyworth, James Gordon, and Catwoman; and foes such as the Penguin, the Riddler, Two-Face, and his archenemy the Joker.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+    </center>
+          </div></div>
+<br>
+ <!-- -----grid system------ -->
+ <!-- ----- 2 columns and right one divided into 3 rows------- -->
+
+<div class="container my-5" id="ma"><center><h1 style="font-size:30px;">More about DC</h1></center></div>
+          <div class="container text-light">
+            <div class="row">
+                <div class="col-lg-3 dbox">
+                    <div class="col">
+                      <div class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250" id="row1">
+                          <div class="card-body">
+                              <h1 class="card-title">DC+</h1>
+                              <p class="card-text">DC Universe already had an absolutely staggering lineup of comic books and graphic novels from DC’s past and present—and DC Universe Infinite has added nearly a thousand new titles on top of that, with more added each week. Here’s a taste of what’s new on DC Universe Infinite right now.</p>
+                              <h4>Enhanced Reading Experience</h4>
+<p>If you were a DC Universe subscriber, one of the first things you’ll notice about DC Universe Infinite is that comics load faster—a lot faster!—cutting significantly down on lag time between pages. If you’re new to the service, simply revel in the undeniably smooth reading experience.</p>
+
+                          </div>
+                      </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-1 dbox">
+                </div>
+    
+                <div class="col-lg-8 dbox">
+                  <div class="row border rounded overflow-hidden shadow-sm" id="col1">
+                     <div class="row">
+                        <h2>Shop DC</h2>
+                        <p>Don’t miss the latest collections from our heroes & villains <br>
+                          You can jump into DCUI’s dozens of curated collections—based on storylines or thematic ties—and use the My DC feature to create your own personal comics lists (think a playlist, but comics), based on whatever criteria you choose. “Favorite Catwoman Capers.” “Best Wonder Woman Comics from 1984.” “Comics Where Batman Punches Guy Gardner.” The power is yours.
+                        </p>
+    
+                    </div>
+                  </div>
+                   
+                    <br>
+                   <div class="row border rounded overflow-hidden shadow-sm" id="col2">
+                    <div class="row" >
+                      <h2>About DC</h2>
+                      <p>DC Comics, Inc. is an American comic book publisher and the flagship unit of DC Entertainment, a subsidiary of the Warner Bros. Global Brands and Franchises division of Warner Bros., which itself is a subsidiary of Warner Bros. Discovery.
+
+                        DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937. The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters, such as Superman, Batman, and Wonder Woman.</p>
+  
+                  </div>
+                   </div>
+                    
+                    <br>
+                    <br>
+
+                    <div class="row border rounded overflow-hidden shadow-sm h-md-250" id="col3">
+                      <div class="row">
+                        <h2>Contact DC</h2>
+                        <p>For Advertising and Custom Publishing, please contact dccomicsadvertising@dccomics.com.</p>
+                        <p>For press inquiries, please contact DCPress@dcentertainment.com.</p>
+                      </div>
+                      </div>
+
+                    </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+              
+            
+          </div>
+        
+        <br><br>
+
+
+        <!-- -------google maps embed------ -->
+
+        <div class="h-100 p-5 jcolor border rounded-3 bg-dark text-light">
+          <center>
+  
+              <h2>LOCATE DC</h2>
+              <p>Come experience all of your favourite DC first hand at here at Burbank.</p>
+              
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52809.686198962365!2d-118.36023060189372!3d34.18200547597686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295152818c595%3A0x307791af901f8ad4!2sBurbank%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1649956354575!5m2!1sen!2sin" width="1280" height="720" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+          </iframe>
+      </center>
+      </div>
+
+      <br><br><br>
+
+      <!-- -----footer---- -->
+  
+      <div class="container-fluid bcolor">
+        <footer class="py-5 ">
+            <div class="row">
+                <div class="col-2">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+              </div>
+
+              <div class="col-2">
+              </div>
+
+                
+
+                
+
+                <div class="col-4 offset-1">
+                    <form>
+                        <h5>Newsletter DC</h5>
+                        <p>Weekly digest of what's latest from your world of DC.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+           <!-- ------social media icons---- -->
+
+
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>© 2022 DC Comics, Inc. All rights reserved.</p>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                </div>
+            </div>
+
+
+        </footer>
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
